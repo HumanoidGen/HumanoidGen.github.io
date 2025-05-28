@@ -198,7 +198,7 @@
                   <span class="icon">
                       <i class="fab fa-github"></i>
                   </span>
-                  <span>Code</span>
+                  <span>Code (coming soon)</span>
                   </a>
               </span>
               <!-- Dataset Link. -->
@@ -210,7 +210,7 @@
                       <img src="./static/images/database.png" alt="icon" style="width: 1em; height: 1em; vertical-align: middle;">
 
                   </span>
-                  <span>Dataset</span>
+                  <span>Dataset (coming soon)</span>
                   </a>
             </div>
 
@@ -261,7 +261,18 @@
           <div style="display: flex; justify-content: center; align-items: center;">
             <img style="max-width: 100%; height: auto;" src="./static/images/method.png" alt="图片1">
           </div>
-          
+          <br>
+          <div class="content has-text-justified">
+            <p>
+              HumanoidGen is an automated simualtion framework for scene generation, demonstration collection, and data generalization of bimanual dexterous manipulation, aiming to provide high-quality demonstrations over diverse scenarios to facilitate data scaling and policy learning. 
+              <strong><em>(i)</em></strong> As preparation, the assets and dexterous hands are meticulously annotated with spatial information. In scene generation, the LLM planner aims to generate an environment setup with code-form configuration based on asset, scene, and task descriptions. 
+              <strong><em>(ii)</em></strong> Based on the generated scenes and pre-defined hand atomic operations, the LLM proceeds to generate the planning code of a chain of spatial constraints for subsequent data collection. 
+              <strong><em>(iii)</em></strong> For tasks with long task horizon planning and insufficient annotations, we employ MCTS with introspective exploration to enhance the reasoning performance of LLMs.
+              <strong><em>(iv)</em></strong> Then, we collect demonstrations by executing the generated code plan with scene scaling to enhance data diversity.
+              These demonstrations are utilized to construct a humanoid manipulation benchmark for policy evaluation.
+            </p>
+          </div>
+
         </div>
       </div>
 
@@ -301,8 +312,17 @@
         <div class="columns is-centered has-text-centered">
 
 
-          <h3 class="title is-4">Motion Tracking</h3>
+          <h3 class="title is-4">Demonstration Generation</h3>
         </div>
+        
+        <br>
+
+        <div class="content has-text-justified">
+          <p>
+            We designed 20 diverse tabletop manipulation tasks and used HumanoidGen to generate demonstrations for them. These tasks cover a wide range of dexterous manipulation scenarios, including single-arm and bimanual operations, long-horizon tasks, articulated object manipulation, and complex collision scenarios.
+          </p>
+        </div>
+
       <div class="container is-max-desktop" style="display: flex;justify-content: center; align-items: center;">
         <!-- Abstract. -->
         <div class="columns is-centered has-text-centered" style="display: flex; justify-content: center; align-items: center;">
@@ -408,12 +428,26 @@
 
 
 
-
+<!-- brrrrrrrrrrrrrrrrrrrrrrrrrrrrreak -->
 
       <div class="columns is-centered has-text-centered">
-        <h3 class="title is-4">Loco-manipulation Tasks</h3>
+        <h3 class="title is-4">MCTS Enhanced Demonstration Generation</h3>
       </div>
+
+      <br>
+
+      <div class="content has-text-justified">
+        <p>
+          We enhanced HumanoidGen with MCTS to improve its demonstration generation capabilities.
+          Three tasks from the aforementioned tasks, along with an additional single-arm task, are selected for the experiment.
+          We increased the task complexity by <strong><em>(i)</em></strong> removing all operation annotations for cubes and <strong><em>(ii)</em></strong> simplifying task descriptions to provide minimal guidance.
+
+        </p>
       </div>
+
+      </div>
+
+
 <br>
 
 
@@ -473,15 +507,15 @@
         <!-- Abstract. -->
         <div class="columns is-centered has-text-centered">
           <div class="column is-four-fifths">
-            <h2 class="title is-3">ALMI-X Dataset and Foundational Model</h2>
+            <h2 class="title is-3">Videos of DP & DP3 deployment</h2>
             
-
-            <div class="content has-text-justified">
+            <!-- 这边不写文字了？ -->
+            <!-- <div class="content has-text-justified">
               <p>
-                We also release a large-scale whole-body motion control dataset - ALMI-X, featuring high-quality episodic trajectories from MuJoCo simulations deployable on real robots, based on our humanoid control policy - ALMI.
-
+                We trained DP & DP3 policies on the collected demonstration data.
               </p>
-            </div>
+            </div> -->
+
             <!-- <div>
             
               You can download our dataset here: <a href="https://huggingface.co/datasets/TeleEmbodied/ALMI-X">ALMI-X</a>.<br>
