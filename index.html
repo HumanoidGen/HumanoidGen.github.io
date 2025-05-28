@@ -110,7 +110,7 @@
   <link rel="stylesheet"
         href="https://cdn.jsdelivr.net/gh/jpswalsh/academicons@1/css/academicons.min.css">
   <link rel="stylesheet" href="./static/css/index.css">
-  <link rel="icon" href="./static/images/favicon.png">
+  <link rel="icon" href="./static/images/robot.png">
 
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
   <script defer src="./static/js/fontawesome.all.min.js"></script>
@@ -193,7 +193,7 @@
               </span> -->
               <!-- Code Link. -->
               <span class="link-block">
-                <a href="https://drive.google.com/file/d/12hK8wajdeDG3wN0_WWCt0NY0N9p1HVlA/view?usp=sharing"
+                <a href="https://humanoidgen.github.io/"
                    class="external-link button is-normal is-rounded is-dark">
                   <span class="icon">
                       <i class="fab fa-github"></i>
@@ -203,7 +203,7 @@
               </span>
               <!-- Dataset Link. -->
               <span class="link-block">
-                <a href="https://drive.google.com/file/d/13msVuYWsCOTeQ4yTgPcrNBDFM9UqzNKQ/view?usp=sharing"
+                <a href="https://humanoidgen.github.io/"
                    class="external-link button is-normal is-rounded is-dark">
                   <span class="icon">
                       <!-- <i class="far fa-images"></i> -->
@@ -223,22 +223,10 @@
 
 <section class="section">
 
-    <!-- Paper video. -->
+    <!-- Paper video.
     <div class="columns is-centered has-text-centered">
       <div class="column is-four-fifths">
         <h2 class="title is-3">Video</h2>
-        <!-- <div class="publication-video">
-          <iframe src="https://www.youtube.com/embed/MrKrnHhk8IA?rel=0&amp;showinfo=0"
-                  frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
-        </div> -->
-        <!-- <div class="content has-text-centered">
-          <video id="replay-video"
-                 preload
-                 autoplay loop playsinline controls
-                 width="75%">
-            <source src="./static/videos/eng.mp4"
-                    type="video/mp4">
-          </video> -->
           <video src="./static/videos/whatever.mp4"  autoplay loop playsinline controls width="75%"></video>
           
       </div>
@@ -248,9 +236,7 @@
 
 
 
-  </div>
-
-
+  </div> -->
 
   <div class="container is-max-desktop">
     <!-- Abstract. -->
@@ -259,7 +245,7 @@
         <h2 class="title is-3">Abstract</h2>
         <div class="content has-text-justified">
           <p>
-            For robotic manipulation, existing robotics datasets and simulation benchmarks predominantly cater to robot-arm platforms. However, for humanoid robots equipped with dual arms and dexterous hands, simulation tasks and high-quality demonstrations are notably lacking. Bimanual dexterous manipulation is inherently more complex, as it requires coordinated arm movements and hand operations, making autonomous data collection challenging. This paper presents \ours, an automated task creation and demonstration collection framework that leverages atomic dexterous operations and LLM reasoning to generate relational constraints. Specifically, we provide spatial annotations for both assets and dexterous hands based on the atomic operations, and perform an LLM planner to generate a chain of actionable spatial constraints for arm movements based on object affordances and scenes. To further improve planning ability, we employ a variant of Monte Carlo tree search to enhance LLM reasoning for long-horizon tasks and insufficient annotation. In experiments, we create a novel benchmark with augmented scenarios to evaluate the quality of the collected data. The results show that the performance of the 2D and 3D diffusion policies can scale with the generated dataset. 
+            For robotic manipulation, existing robotics datasets and simulation benchmarks predominantly cater to robot-arm platforms. However, for humanoid robots equipped with dual arms and dexterous hands, simulation tasks and high-quality demonstrations are notably lacking. Bimanual dexterous manipulation is inherently more complex, as it requires coordinated arm movements and hand operations, making autonomous data collection challenging. This paper presents HumanoidGen, an automated task creation and demonstration collection framework that leverages atomic dexterous operations and LLM reasoning to generate relational constraints. Specifically, we provide spatial annotations for both assets and dexterous hands based on the atomic operations, and perform an LLM planner to generate a chain of actionable spatial constraints for arm movements based on object affordances and scenes. To further improve planning ability, we employ a variant of Monte Carlo tree search to enhance LLM reasoning for long-horizon tasks and insufficient annotation. In experiments, we create a novel benchmark with augmented scenarios to evaluate the quality of the collected data. The results show that the performance of the 2D and 3D diffusion policies can scale with the generated dataset. 
           </p>
         </div>
       </div>
@@ -273,7 +259,7 @@
         <div class="column is-four-fifths">
           <h2 class="title is-3">Method</h2>
           <div style="display: flex; justify-content: center; align-items: center;">
-            <img style="max-width: 100%; height: auto;" src="./static/images/whatever.png" alt="图片1">
+            <img style="max-width: 100%; height: auto;" src="./static/images/method.png" alt="图片1">
           </div>
           
         </div>
@@ -282,8 +268,7 @@
 
       <br>
 
-      <div class="container is-max-desktop">
-        <!-- Abstract. -->
+      <!-- <div class="container is-max-desktop">
         <div class="columns is-centered has-text-centered">
           <div class="column is-four-fifths">
             <h2 class="title is-3">ALMI Deployment Setting</h2>
@@ -300,7 +285,7 @@
             
           </div>
         </div>
-      </div>
+      </div> -->
 <br>
 <br>
         
